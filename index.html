@@ -14,15 +14,50 @@
     <link rel="stylesheet" href="css/master.css">
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="56">
     <header>
-      <div class="container-fluid bg-info text-light text-center jumbotron">
+        <!--Menu-->
+            <nav class="navbar navbar-expand-sm justify-content-between bg-info navbar-dark fixed-top">
+              <a class="navbar-brand text-light" href="#">EFS</a>
+              <!-- Toggler/collapsibe Button -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+              <ul class="navbar-nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#values">Values</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#contact">Contact</a>
+                </li>
+              </ul>
+              </div>
+          </nav>
+    </header>
+
+    <!--title-->
+    <section id="home" class="container-fluid text-center jumbotron bg-light">
+      <div class="container">
         <h1 class="">Enterprises</h1>
         <p class="">We specialize in corporative web</p>
       </div>
-    </header>
+    </section>
+
     <!--About Company-->
-    <section class="container-fluid my-5">
+    <section id="about" class="container-fluid my-5">
       <div class="container">
         <div class="row">
           <div class="col-8">
@@ -39,7 +74,7 @@
     </section>
 
     <!--Our values-->
-    <section class="container-fluid bg-light py-5">
+    <section id="values" class="container-fluid bg-light py-5">
       <div class="container">
         <div class="row">
           <div class="col-4 display-1 text-info">
@@ -55,7 +90,7 @@
     </section>
 
 <!--Services-->
-<section class="container-fluid text-center py-5">
+<section id="services" class="container-fluid text-center py-5">
   <div class="container">
       <h2>SERVICES</h2>
       <h4>What we offer</h4>
@@ -96,7 +131,8 @@
 
 </section>
 <!--Portfolio-->
-  <div class="container-fluid bg-light text-center py-5">
+
+  <div id="portfolio" class="container-fluid bg-light text-center py-5">
     <div class="container">
       <h2>Portfolio</h2>
       <h4>What we have created</h4>
@@ -132,8 +168,9 @@
       </div>
       </div>
   </div>
+
   <!--footer-->
-  <footer class="container-fluid bg-info py-5 text-light">
+  <footer id="contact" class="container-fluid bg-info py-5 text-light">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -153,16 +190,15 @@
                 <div class="col form-group">
                   <input id="email" type="email" name="email" value="" class="form-control" placeholder="Email">
                 </div>
-                </div>
+              </div>
                 <div class="form-group">
                   <textarea name="comment" rows="3" placeholder="Comment" class="form-control"></textarea>
                 </div>
                 <div class="form-group">
                   <button type="submit" name="send" class="btn btn-light">Send</button>
                 </div>
-              </div>
-            </form>
-          </div>
+              </form>
+            </div>
           </div>
         </div>
   </footer>
